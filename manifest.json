@@ -10,7 +10,14 @@
       },
       "requests": {}
     },
-    "support_ticket": {}
+    "support_contact": {
+      "location": {
+        "contact_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    }
   },
   "engines": {
     "node": "18.12.0",

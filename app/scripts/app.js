@@ -18,7 +18,7 @@ async function renderText() {
     },
   } = contactData;
 
-  userName.innerHTML = userName.innerHTML = `
+  userName.innerHTML = `
   <span style="color:black; font-weight: bold;font-size:15px"  >Name:</span> 
   <span style="color: green; font-style: bold;">${name}</span>
 `;

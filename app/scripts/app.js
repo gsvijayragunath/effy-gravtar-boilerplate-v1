@@ -11,14 +11,12 @@ async function init() {
 async function renderText() {
   const userName = document.getElementById('userName')
   const userEmail= document.getElementById('userEmail')
-  const contactData = await client.data.get("loggedInUser");
+  const contactData = await client.data.get("contact");
   const {
-    loggedInUser: {
       contact: { name,email },
-    },
   } = contactData;
 
-  userName.innerHTML = `
+  userName.innerHTML = userName.innerHTML = `
   <span style="color:black; font-weight: bold;font-size:15px"  >Name:</span> 
   <span style="color: green; font-style: bold;">${name}</span>
 `;
@@ -30,12 +28,10 @@ async function renderText() {
 async function generateHash() {
   const imageSize = 200;
   const userImage = document.getElementById('userImage')
-  const contactData = await client.data.get("loggedInUser");
+  const contactData = await client.data.get("contact");
   console.log(contactData)
   const {
-    loggedInUser: {
       contact: { email },
-    },
   } = contactData;
 
 

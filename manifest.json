@@ -1,15 +1,6 @@
 {
   "platform-version": "3.0",
   "modules": {
-    "common": {
-      "location": {
-        "full_page_app": {
-          "url": "index.html",
-          "icon": "styles/images/icon.svg"
-        }
-      },
-      "requests": {}
-    },
     "support_contact": {
       "location": {
         "contact_sidebar": {
